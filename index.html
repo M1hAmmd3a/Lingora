@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta name="theme-color" content="#0A0B18" />
+<meta name="theme-color" content="#FFFFFF" />
 <title>Lingoora — كل لغة نجمة في سمائها</title>
 <link rel="stylesheet" href="style.css" />
 </head>
@@ -40,8 +40,8 @@
 
     <div id="loginForm">
       <div class="field">
-        <label>البريد الإلكتروني</label>
-        <input type="email" id="loginEmail" placeholder="you@example.com" autocomplete="email" />
+        <label>اسم المستخدم</label>
+        <input type="text" id="loginUsername" placeholder="username" autocomplete="username" />
       </div>
       <div class="field">
         <label>كلمة المرور</label>
@@ -52,8 +52,8 @@
 
     <div id="signupForm" style="display:none;">
       <div class="field">
-        <label>الاسم</label>
-        <input type="text" id="suName" placeholder="اسمك الظاهر" autocomplete="name" />
+        <label>الاسم الظاهر</label>
+        <input type="text" id="suName" placeholder="مثال: أحمد" autocomplete="name" />
       </div>
       <div class="field">
         <label>لغتك الأساسية</label>
@@ -69,8 +69,9 @@
         </select>
       </div>
       <div class="field">
-        <label>البريد الإلكتروني</label>
-        <input type="email" id="suEmail" placeholder="you@example.com" autocomplete="email" />
+        <label>اسم المستخدم</label>
+        <input type="text" id="suUsername" placeholder="username" autocomplete="username" />
+        <div class="hint">حروف إنجليزية وأرقام و "_" فقط، بدون مسافات (3 أحرف على الأقل)</div>
       </div>
       <div class="field">
         <label>كلمة المرور</label>
@@ -121,6 +122,7 @@
           </div>
         </div>
         <div class="messages" id="messages"></div>
+        <div class="translateStatus" id="translateStatus"></div>
         <div class="composer">
           <button class="iconBtn mic" id="micBtn" title="تسجيل صوتي">🎤</button>
           <textarea id="msgInput" placeholder="اكتب رسالتك..." rows="1"></textarea>
